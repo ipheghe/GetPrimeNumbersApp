@@ -22,7 +22,7 @@ module.exports = {
     
             if (n == 2 ) {
 
-                primeArray = [2]
+                primeArray = [2];
 
             }
            
