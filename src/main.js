@@ -2,7 +2,7 @@
 
 module.exports = {
     /* Find the prime numbers from a group of numbers */
-    getPrimes: (n) => {
+    getPrimes: (n) => {  
         
         var primeArray = [];
         
@@ -17,21 +17,17 @@ module.exports = {
             return 'No negative Number allowed';
             
         }  
-        
-        else if (n < 2) {
+                
+        else if (n < 2 && n >= 0) {
         
             return 'No Prime number available';
             
-        }
-               
-        else if (n % 1 !== 0) {
+        }  
         
-            return 'Decimal numbers not allowed';
+        else {
+        
+            n = Math.round(n);
             
-        }
-        
-       else{
-    
             if (n === 2) {
 
                 primeArray = [2];
@@ -59,8 +55,9 @@ module.exports = {
                 }
 
             }
-        
-       }
+            
+        }
+            
     
     return primeArray;   
                  
