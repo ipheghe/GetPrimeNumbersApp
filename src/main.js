@@ -20,13 +20,13 @@ module.exports = {
         
        else{
     
-            if (n < 3 ) {
+            if (n == 2 ) {
 
                 primeArray = [2]
 
             }
            
-            else if (n < 4 ) {
+            else if (n == 3 ) {
 
                 primeArray = [2,3];
 
