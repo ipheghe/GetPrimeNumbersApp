@@ -28,7 +28,7 @@ module.exports = {
            
             else if (n < 4 ) {
 
-                primeArrayprimeArray = [2,3];
+                primeArray = [2,3];
 
             }
            
