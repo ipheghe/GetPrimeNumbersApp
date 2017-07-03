@@ -34,6 +34,7 @@ describe("primeArray", function() {
         it("should return undefined as getPrimes for 'demo'", function() {
             assert.equal(myApp.getPrimes('demo'), 'undefined');
         });  
+        
         it("should return undefined as getPrimes for -1", function() {
             assert.equal(myApp.getPrimes(-1), 'No negative Number allowed');
         });    
