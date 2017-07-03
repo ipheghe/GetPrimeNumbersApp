@@ -1,0 +1,23 @@
+{
+  "name": "prime-numbers-sample",
+  "version": "1.0.0",
+  "description": "Get Prime Number ",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/test.js"
+  },
+  "keywords": [
+    "Prime",
+    "Numbers",
+    "javascript"
+  ],
+  "author": "Ovie Ipheghe",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
