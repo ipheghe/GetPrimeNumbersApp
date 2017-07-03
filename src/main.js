@@ -12,6 +12,11 @@ module.exports = {
             
         }
         
+        else if (n < 0) {
+        
+            return 'No negative Number allowed';
+            
+        }        
         else if (n < 2 ) {
         
             return 'No Prime number available';
