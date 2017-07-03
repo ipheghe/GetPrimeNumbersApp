@@ -16,22 +16,29 @@ module.exports = {
         
             return 'No negative Number allowed';
             
-        }        
-        else if (n < 2 ) {
+        }  
+        
+        else if (n < 2) {
         
             return 'No Prime number available';
+            
+        }
+               
+        else if (n % 1 !== 0) {
+        
+            return 'Decimal numbers not allowed';
             
         }
         
        else{
     
-            if (n === 2 ) {
+            if (n === 2) {
 
                 primeArray = [2];
 
             }
            
-            else if (n === 3 ) {
+            else if (n === 3) {
 
                 primeArray = [2,3];
 

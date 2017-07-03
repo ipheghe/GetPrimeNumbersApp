@@ -5,6 +5,14 @@ describe("primeArray", function() {
     
         
     describe("handle a valid input", function() {
+        it("should return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 77, 79, 83, 89, 91, 97] as prime numbers from 0 to 100", function() {
+            assert.deepEqual(myApp.getPrimes(100), [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 77, 79, 83, 89, 91, 97]);
+        });    
+        
+        it("should return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67] as prime numbers from 0 to 67", function() {
+            assert.deepEqual(myApp.getPrimes(67), [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67]);
+        }); 
+        
         it("should return [2,3,5,7,11] as prime numbers from 0 to 11", function() {
             assert.deepEqual(myApp.getPrimes(11), [2,3,5,7,11]);
         });    
@@ -37,6 +45,10 @@ describe("primeArray", function() {
         
         it("should return undefined as getPrimes for -1", function() {
             assert.equal(myApp.getPrimes(-1), 'No negative Number allowed');
+        }); 
+        
+        it("should return undefined as getPrimes for 2.5", function() {
+            assert.equal(myApp.getPrimes(2.5), 'Decimal numbers not allowed');
         });    
             
     })
